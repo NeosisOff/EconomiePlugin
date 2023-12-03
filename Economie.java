@@ -22,6 +22,7 @@ public class Economie implements CommandExecutor {
             if(money.get(player.getUniqueId()) == null){
                 //* si l'argent du joueur n'est pas defini alors son solde est egal a 0
                 player.sendMessage("§6Solde Actuelle: §a0$");
+                money.put(player.getUniqueId, 0)
             }
             else{
                 //* si l'argent du joueur est defini alors on recupere le solde du joueur dans le HashMap et on lui affiche
